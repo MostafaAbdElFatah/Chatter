@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		718BF5ED1F25E9D20018AFEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BF5EC1F25E9D20018AFEC /* AppDelegate.swift */; };
-		718BF5EF1F25E9D20018AFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BF5EE1F25E9D20018AFEC /* ViewController.swift */; };
 		718BF5F21F25E9D20018AFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718BF5F01F25E9D20018AFEC /* Main.storyboard */; };
 		718BF5F51F25E9D20018AFEC /* Chatter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 718BF5F31F25E9D20018AFEC /* Chatter.xcdatamodeld */; };
 		718BF5F71F25E9D20018AFEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718BF5F61F25E9D20018AFEC /* Assets.xcassets */; };
 		718BF5FA1F25E9D20018AFEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718BF5F81F25E9D20018AFEC /* LaunchScreen.storyboard */; };
 		718BF6051F25E9D20018AFEC /* ChatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BF6041F25E9D20018AFEC /* ChatterTests.swift */; };
 		718BF6101F25E9D20018AFEC /* ChatterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BF60F1F25E9D20018AFEC /* ChatterUITests.swift */; };
+		7190283D1F25F5E300CCF831 /* ChatTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190283C1F25F5E300CCF831 /* ChatTextVC.swift */; };
+		7190283F1F26075500CCF831 /* ChatterTablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190283E1F26075500CCF831 /* ChatterTablePage.swift */; };
+		719028411F260A6700CCF831 /* RowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719028401F260A6700CCF831 /* RowTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		718BF5E91F25E9D20018AFEC /* Chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BF5EC1F25E9D20018AFEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		718BF5EE1F25E9D20018AFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		718BF5F11F25E9D20018AFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		718BF5F41F25E9D20018AFEC /* Chatter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chatter.xcdatamodel; sourceTree = "<group>"; };
 		718BF5F61F25E9D20018AFEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		718BF60B1F25E9D20018AFEC /* ChatterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BF60F1F25E9D20018AFEC /* ChatterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterUITests.swift; sourceTree = "<group>"; };
 		718BF6111F25E9D20018AFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7190283C1F25F5E300CCF831 /* ChatTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextVC.swift; sourceTree = "<group>"; };
+		7190283E1F26075500CCF831 /* ChatterTablePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatterTablePage.swift; sourceTree = "<group>"; };
+		719028401F260A6700CCF831 /* RowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				718BF5EC1F25E9D20018AFEC /* AppDelegate.swift */,
-				718BF5EE1F25E9D20018AFEC /* ViewController.swift */,
 				718BF5F01F25E9D20018AFEC /* Main.storyboard */,
 				718BF5F61F25E9D20018AFEC /* Assets.xcassets */,
 				718BF5F81F25E9D20018AFEC /* LaunchScreen.storyboard */,
 				718BF5FB1F25E9D20018AFEC /* Info.plist */,
 				718BF5F31F25E9D20018AFEC /* Chatter.xcdatamodeld */,
+				7190283C1F25F5E300CCF831 /* ChatTextVC.swift */,
+				7190283E1F26075500CCF831 /* ChatterTablePage.swift */,
+				719028401F260A6700CCF831 /* RowTableViewCell.swift */,
 			);
 			path = Chatter;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				718BF5EF1F25E9D20018AFEC /* ViewController.swift in Sources */,
 				718BF5F51F25E9D20018AFEC /* Chatter.xcdatamodeld in Sources */,
+				719028411F260A6700CCF831 /* RowTableViewCell.swift in Sources */,
+				7190283F1F26075500CCF831 /* ChatterTablePage.swift in Sources */,
+				7190283D1F25F5E300CCF831 /* ChatTextVC.swift in Sources */,
 				718BF5ED1F25E9D20018AFEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +494,7 @@
 				718BF6161F25E9D20018AFEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		718BF6171F25E9D20018AFEC /* Build configuration list for PBXNativeTarget "ChatterTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				718BF6191F25E9D20018AFEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		718BF61A1F25E9D20018AFEC /* Build configuration list for PBXNativeTarget "ChatterUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				718BF61C1F25E9D20018AFEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
