@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n81-88-fub">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n81-88-fub">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Chatter Table Page-->
@@ -11,54 +15,48 @@
             <objects>
                 <tableViewController id="WRk-1U-ifQ" customClass="ChatterTablePage" customModule="Chatter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" id="6zf-mE-JQf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="147" id="jXN-G3-AIL" customClass="RowTableViewCell" customModule="Chatter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="147"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="147"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jXN-G3-AIL" id="VdK-bh-kZb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="146"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuO-OT-1e3">
-                                            <rect key="frame" x="8" y="5" width="44" height="21"/>
-                                            <animations/>
+                                            <rect key="frame" x="16" y="8" width="44" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/7/2017 11:50:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R5-03-y1s">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="24/7/2017 11:50:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R5-03-y1s">
                                             <rect key="frame" x="444" y="8" width="148" height="21"/>
-                                            <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-Sp-arw">
-                                            <rect key="frame" x="8" y="34" width="100" height="104"/>
-                                            <animations/>
+                                            <rect key="frame" x="16" y="37" width="100" height="104"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="5cT-OO-qCo"/>
                                                 <constraint firstAttribute="height" constant="104" id="A7g-TL-APt"/>
                                             </constraints>
                                         </imageView>
                                         <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mbN-34-ksD">
-                                            <rect key="frame" x="115" y="41" width="477" height="90"/>
-                                            <animations/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="123" y="44" width="236" height="90"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="90" id="WxF-YQ-IF6"/>
                                             </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstItem="mbN-34-ksD" firstAttribute="top" secondItem="6R5-03-y1s" secondAttribute="bottom" constant="12" id="Ef1-EK-8Tg"/>
                                         <constraint firstItem="Z6d-Sp-arw" firstAttribute="top" secondItem="HuO-OT-1e3" secondAttribute="bottom" constant="8" id="Gbd-uH-UX4"/>
@@ -71,7 +69,6 @@
                                         <constraint firstItem="mbN-34-ksD" firstAttribute="leading" secondItem="Z6d-Sp-arw" secondAttribute="trailing" constant="7" id="z2V-Id-4KG"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <outlet property="userChat" destination="mbN-34-ksD" id="xWr-Qk-feA"/>
                                     <outlet property="userDateChat" destination="6R5-03-y1s" id="nfS-e0-RUc"/>
@@ -107,24 +104,22 @@
                         <viewControllerLayoutGuide type="bottom" id="WAa-hW-ZgG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qvh-VS-ECr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLT-YW-4nU">
-                                <rect key="frame" x="396" y="363" width="54" height="21"/>
-                                <animations/>
+                                <rect key="frame" x="283" y="396.5" width="54" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="1K7-8f-mn7"/>
                                     <constraint firstAttribute="height" constant="21" id="de6-AY-ANN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="textColor" red="0.052636142079999997" green="0.18318385009999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.052636142079999997" green="0.18318385009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="J7O-bs-FjZ">
-                                <rect key="frame" x="151" y="245" width="299" height="110"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="38" y="278.5" width="299" height="110"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="bLg-Yy-XIS"/>
                                     <constraint firstAttribute="height" constant="110" id="n9n-Ja-G1x"/>
@@ -136,8 +131,7 @@
                                 </connections>
                             </textView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SLT-YW-4nU" firstAttribute="trailing" secondItem="J7O-bs-FjZ" secondAttribute="trailing" id="0y6-ve-DdZ"/>
                             <constraint firstItem="SLT-YW-4nU" firstAttribute="top" secondItem="J7O-bs-FjZ" secondAttribute="bottom" constant="8" symbolic="YES" id="1Oo-E5-yO7"/>
@@ -151,7 +145,7 @@
                     <navigationItem key="navigationItem" title="Title" id="X58-oz-yJ2">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="AyD-Ec-JIU">
                             <connections>
-                                <action selector="Done_btnClicked:" destination="y2P-cy-43u" id="UrC-qz-pjl"/>
+                                <action selector="done_btnClicked:" destination="y2P-cy-43u" id="ICT-co-FVu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -171,10 +165,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n81-88-fub" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vLt-c7-a36">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
